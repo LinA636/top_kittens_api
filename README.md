@@ -1,6 +1,6 @@
 Rails app - dataproducing API
 
-will display cure kitten pictures
+create, edit and delete cute Kittens
 
 This project applys to TheOdinProject lesson: https://www.theodinproject.com/lessons/ruby-on-rails-kittens-api
 
