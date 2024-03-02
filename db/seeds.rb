@@ -7,3 +7,16 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Kitten.delete_all
+
+# create Kittens
+kitten_names = ['Socke', 'Nora', 'Nouks']
+
+kittens = kitten_names.map do |name|
+    Kitten.create(
+        name: name,
+        age: 3,
+        cuteness: 8,
+        softness: 8
+    )
+end

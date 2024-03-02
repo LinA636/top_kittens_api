@@ -12,7 +12,7 @@ class KittensController < ApplicationController
     end
 
     def create
-        @kitten = Kitten.new()
+        @kitten = Kitten.new(kitten_params)
 
         if @kitten.save
             flash[:success] = 'Kitten successfully created'
@@ -45,5 +45,11 @@ class KittensController < ApplicationController
 
         flash[:success] = 'Kitten succesfully destroyed you'
         redirect_to kittens_path
+    end
+
+    private
+
+    def kitten_params
+        params.require(:kitten).permit(:id, :name, :age, :cuteness, :softness)
     end
 end
