@@ -1,0 +1,5 @@
+<h1>Create a new Kitten</h1>
+
+<%= form_with(model: @kitten, local: true) do |f| %>
+   <%= render 'form', f: f %>
+<% end %>
