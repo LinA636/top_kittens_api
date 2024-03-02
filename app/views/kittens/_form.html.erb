@@ -5,17 +5,17 @@
 
   <div class="field">
     <%= f.label :age %>
-    <%= f.integer_field :age %>
+    <%= f.number_field :age, min: 0 %>
   </div>
 
   <div class="field">
     <%= f.label :cuteness %>
-    <%= f.integer_field :cuteness %>
+    <%= f.number_field :cuteness, min: 0, max: 10 %>
   </div>
 
    <div class="field">
     <%= f.label :softness %>
-    <%= f.integer_field :softness %>
+    <%= f.number_field :softness, min: 0, max: 10 %>
   </div>
 
   <div class="actions">
