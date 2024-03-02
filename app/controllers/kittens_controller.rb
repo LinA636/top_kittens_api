@@ -17,7 +17,7 @@ class KittensController < ApplicationController
         if @kitten.save
             redirect_to kittens_path, notice: 'Kitten successfully created'
         else
-            render :new, status: :unprocessable_entity
+            render :new, status: :unprocessable_entity, notice: 'That kitten just ran away from you. Go catch it!'
         end      
     end
 
@@ -31,7 +31,7 @@ class KittensController < ApplicationController
         if @kitten.update(kitten_params)
             redirect_to kitten_path(@kitten), notice: 'Kitten successfully created'
         else
-            render :new, status: :unprocessable_entity
+            render :new, status: :unprocessable_entity, notice: 'That Kitten didnt want to change its status. Guess you need to sweet-talk it more into it.'
         end  
     end
 
@@ -39,6 +39,6 @@ class KittensController < ApplicationController
         @kitten = Kitten.find(params[:id])
         @kitten.destroy
 
-        redirect_to kittens_path, notice: 'Kitten succesfully destroyed'
+        redirect_to kittens_path, notice: 'Kitten succesfully destroyed you'
     end
 end
