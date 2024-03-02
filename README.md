@@ -2,6 +2,8 @@ Rails app - dataproducing API
 
 will display cure kitten pictures
 
+This project applys to TheOdinProject lesson: https://www.theodinproject.com/lessons/ruby-on-rails-kittens-api
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
