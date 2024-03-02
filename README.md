@@ -1,4 +1,6 @@
-# README
+Rails app - dataproducing API
+
+will display cure kitten pictures
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
