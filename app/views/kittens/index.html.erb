@@ -5,7 +5,7 @@
         <p class="name">Name: <%= kitten.name %></p>
         <p class="age">Age: <%= kitten.age %></p>
 
-        <%= button_to 'Delete Kitten', @event, 
+        <%= button_to 'Delete Kitten', kitten, 
             method: :delete, 
             data: { confirm: 'Are you sure?' }, 
             class: 'btn btn-danger' %>

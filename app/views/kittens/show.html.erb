@@ -7,7 +7,7 @@
     <p class="softness">Softness: <%= @kitten.softness %></p>
 </div>
 
-<%= button_to 'Delete Kitten', @event, 
+<%= button_to 'Delete Kitten', @kitten, 
         method: :delete, 
         data: { confirm: 'Are you sure?' }, 
         class: 'btn btn-danger' %>
