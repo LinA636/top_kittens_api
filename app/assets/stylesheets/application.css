@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+ .flash {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .flash-success {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .flash-error {
+    background-color: #f44336;
+    color: #fff;
+  }
